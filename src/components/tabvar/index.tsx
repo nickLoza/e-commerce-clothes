@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineHome, AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 
-import { BiShoppingBag }from "react-icons/Bi";
+import { BiShoppingBag }from "react-icons/bi";
 import { Link, Navigate } from "react-router-dom";
 import Bag from "../utils/Bag";
 import Menu from "./Menu";

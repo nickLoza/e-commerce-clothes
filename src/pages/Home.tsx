@@ -1,7 +1,7 @@
 import hero1 from "/assets/images/hero/hero-1.jpg";
 import hero2 from "/assets/images/hero/hero-2.jpg";
 import hero3 from "/assets/images/hero/hero-3.jpg";
-import { BiShoppingBag }from "react-icons/Bi";
+import { BiShoppingBag }from "react-icons/bi";
 import { productsArray, productsDB } from "../products/products";
 import { addToCart } from "../features/cart/cartSlice";
 import { useAppDispatch, useAppSelector } from "../app/hooks";

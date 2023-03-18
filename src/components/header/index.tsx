@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
-import { BiShoppingBag }from "react-icons/Bi";
+import { BiShoppingBag }from "react-icons/bi";
 import { Link, NavLink } from "react-router-dom";
 import Bag from "../utils/Bag";
 import Search from "../utils/Search";

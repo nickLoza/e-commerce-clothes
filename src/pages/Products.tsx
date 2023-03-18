@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { MdNavigateNext, MdNavigateBefore} from "react-icons/Md";
+import { MdNavigateNext, MdNavigateBefore} from "react-icons/md";
 import { useAppDispatch } from "../app/hooks";
 import { addToCart } from "../features/cart/cartSlice";
 import { productsDB } from "../products/products";
-import { BiShoppingBag }from "react-icons/Bi";
+import { BiShoppingBag }from "react-icons/bi";
 import { Link } from "react-router-dom";
 import Helmet from "../components/helmet";
 
