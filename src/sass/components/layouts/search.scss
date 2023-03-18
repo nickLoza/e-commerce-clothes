@@ -1,0 +1,48 @@
+@use "../vars/vars" as *;
+
+.search{
+	&__title{
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	&__input{
+		margin: 0 auto;
+		margin-bottom: 2.4rem;
+		width: 70%;
+		height: 2.4rem;
+		max-width: 980px;
+		border: none;
+		outline: none;
+		background-color: none;
+		border-bottom: 2px solid $secondary-color;
+		font-size: 1.3rem;
+	}
+	&__results{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-bottom: 6rem;
+		column-gap: .5rem;
+		.card{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 200px;
+			height: 150px;
+			transition: filter .2s ease-in;
+			&:hover{
+				filter: brightness(130%);
+			}
+			&__title{
+				font-size: 1.2rem;
+			}
+			&__img{
+				width: 120px;
+				height: 120px;
+				object-fit: cover;
+				object-position: top;
+			}
+		}
+	}
+}

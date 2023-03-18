@@ -1,0 +1,94 @@
+@use "../vars/vars" as *;
+
+
+.products{
+	text-align: center;
+	padding-top: 1.9rem;
+	&__pagination{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.4rem;
+		margin-bottom: .7rem;
+		user-select: none;
+		column-gap: .3rem;
+		&-icon{
+			width: 2rem;
+			cursor: pointer;
+		}
+		&-selected{
+			color: $secondary-color;
+		}
+	}
+	&__title{
+		font-size: 1.7rem;
+	}
+	&__filters{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1.5rem;
+		font-size: 1.3rem;
+		margin-bottom: 1.8rem;
+		&-title{
+			margin-right: .5rem;
+		}
+		&-select{
+			border-radius: 17px;
+			cursor: pointer;
+			color: $text-color;
+    		padding: .3rem .7rem;
+			text-align-last: center;
+			outline: 2px solid $text-color;
+			transition: transform .1s ease-in;
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 1.5rem;
+		padding: 0 1.5rem;
+	}
+	&__product{
+		position: relative;
+		&-title{
+			font-size: 1.3rem;
+		}
+		&-season{
+			font-size: 1.1rem;
+			font-weight: 600;
+			color: $secondary-color;
+		}
+		&-img{
+			height: 300px;
+			object-position: top;
+			transition: filter .2s ease-in;
+			&:hover{
+				filter: brightness(130%);
+			}
+		}
+		&-price{
+			margin-top: .4rem;
+			font-size: 1.3rem;
+		}
+		&-cart{
+			position: absolute;
+			top: .2rem;
+			right: .3rem;
+			z-index: 200;
+			cursor: pointer;
+			color: $text-color;
+			font-size: 1.4rem;
+			transition: color .2s ease-in;
+			background-color: #aaa;
+			border-radius: 17px;
+			padding: .3rem .7rem; 
+			&:hover{
+				color: $secondary-color;
+			}
+		}
+	}
+}

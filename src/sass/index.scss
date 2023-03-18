@@ -1,0 +1,51 @@
+@use "./components/reset";
+@use "./components/vars/vars" as *;
+@use "./components/layouts/header";
+@use "./components/layouts/tabvar";
+@use "./components/layouts/hero";
+@use "./components/layouts/store";
+@use "./components/layouts/home";
+@use "./components/layouts/products";
+@use "./components/layouts/productDetails";
+@use "./components/layouts/bag";
+@use "./components/layouts/search";
+@use "./components/layouts/sides";
+@use "./components/layouts/footer";
+
+body{
+	color: $text-color;
+	margin-top: calc($header-height + 1rem);
+	@media only screen and (max-width: 768px) {
+			margin-top: calc($header-height / 1.5)
+		}
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.main{
+	min-height: 100vh
+}
+
+.page-404{
+	margin-top: 30vh;
+	text-align: center;
+	&__p{
+		font-size: 1.6rem;
+	}
+	&__link{
+		margin-top: 1rem;
+		font-size: 1.4rem;
+		color: #0063C6;
+	}
+}
+
+.app{
+
+	&__spinner{
+		text-align: center;
+		margin-top: 40%;
+	}
+}

@@ -1,0 +1,84 @@
+@use "../vars/vars" as *;
+
+.header{
+	width: 100%;
+	height: $header-height;
+	background-color: $text-color-inverse;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 750;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+	@media only screen and (max-width: 768px) {
+			height: calc($header-height / 1.5)
+		}
+	&__navbar{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		transition: filter .2s ease-in;
+		&-center{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+		}
+		&-logo{
+			width: auto;
+			height: auto;
+			max-height: 1.6rem;
+			margin: 1.9rem auto;
+		}
+		.menu{
+			display: flex;
+			&__li{
+				margin: .6rem 1.2rem;
+			}
+			&__link{
+				position: relative;
+				font-size: 1rem;
+				white-space: nowrap;
+				&::before{
+					content: "";
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 100%;
+					width: 100%;
+					height: 2px;
+					background-color: $secondary-color;
+					transform: scale(0);
+					transition: transform .2s ease-in;
+				}
+				&:hover::before, &.active::before{
+					transform: scale(1);
+				}
+			}
+		}
+		&-btn{
+			align-self: flex-start;
+			font-size: 2.1rem;
+			margin: 0 2rem;
+			margin-top: calc($header-height / 4.5);
+			cursor: pointer;
+			transition: color .2s ease-in;
+			&:hover{
+				color: $secondary-color;
+			}
+
+		}
+	}
+	.hide-on-mobile{
+		@media only screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+}
+
+
+

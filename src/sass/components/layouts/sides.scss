@@ -1,0 +1,62 @@
+@use "../vars/vars" as *;
+
+.aside{
+	position: fixed;
+	top: 10rem;
+	right: 0;
+	max-width: 80%;
+	height: 70%;
+	margin: 0 auto;
+	background: $text-color;
+	z-index: 1500;
+	padding-bottom: 9rem;
+	opacity: 0;
+	transition: transform .3s ease-in, opacity .3s ease-in;
+	overflow-y: auto;
+	border: 2px solid $text-color-inverse;
+	color: $text-color-inverse;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;
+	@media only screen and (max-width: 768px) {
+			display: none;
+		}
+	&__btn{
+		font-size: 3rem;
+		position: absolute;
+		right: 0;
+		width: 3.125rem;
+		cursor: pointer;
+		transition: color .2s ease-in;
+		&:hover{
+			color: #D40005;
+		}
+	}
+	&.side-left{
+		left: 0;
+		transform: translate(-100vw);
+	}
+	&.side-right{
+		left: 0;
+		right: 0;
+		transform: translate(100vw);
+	}
+
+
+	&.active{
+		opacity: 1;
+		transform: translate(0);
+	}
+
+	&__btn{
+		font-size: 3rem;
+		position: absolute;
+		right: 0;
+	}
+}
+
+.side-right__btn{
+	left: 0;
+}

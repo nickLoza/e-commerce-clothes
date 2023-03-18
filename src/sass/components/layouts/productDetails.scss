@@ -1,0 +1,68 @@
+@use "../vars/vars" as *;
+
+
+
+
+.product-details{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 2.5rem;
+	max-width: 980px;
+	margin: 0 auto;
+	margin-top: $header-height;
+	padding: .3rem 1rem;
+	&__images{
+		&-img{
+			height: 100%;
+		}
+	}
+	&__text{
+		display: grid;
+		grid-template-rows: repeat(5, 10%) 50%;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: .4rem;
+		&-title{
+			text-transform: uppercase;
+			font-size: 1.5rem;
+		}
+		&-price{
+			font-size: 1.1rem;
+			margin-top: .4rem;
+			margin-bottom: 1rem;
+		}
+		&-type{
+			display: flex;
+			align-items: center;
+			font-size: 1.2rem;
+			span{
+				font-size: 1.1rem;
+				margin-left: .5rem;
+				padding: .2rem .4rem;
+				border: 1px solid $text-color;
+				background-color: #ccc;
+			}
+		}
+		&-btn{
+			font-size: 1.2rem;
+			background: $secondary-color;
+			padding: .3rem .7rem;
+			cursor: pointer;
+			transition: filter .2s ease-in;
+			&:hover{
+				filter: brightness(110%);
+			}
+		}
+		&-description{
+			display: flex;
+			flex-direction: column;
+			row-gap: 1rem;
+			max-width: 450px;
+			font-size: .9rem;
+			b{
+				font-weight: 700;
+			}
+		}
+	}
+}

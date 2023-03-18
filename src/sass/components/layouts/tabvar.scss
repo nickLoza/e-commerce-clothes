@@ -1,0 +1,95 @@
+@use "../vars/vars" as *;
+
+
+.tabvar{
+	@media only screen and (min-width: 768px) {
+		display: none;
+	}
+	&__content{
+		position: fixed;
+		left: 0;
+		top: calc($header-height / 1.5rem);
+		height: calc(100% - 1rem - $header-height);
+		width: 100%;
+		z-index: 500;
+		transform: translateY(100%);
+		background: $text-color-inverse;
+		transition: transform .3s ease-in;
+		overflow-y: auto;
+		&.active{
+			transform: translateY(0);
+		}
+		&-close{
+			position: absolute;
+			right: .5rem;
+			top: .5rem;
+			font-size: 3.1rem;
+			transition: transform .2s ease-in, color .2s ease-in;
+			cursor: pointer;
+			&:hover{
+				transform: scale(1.1);
+				color: $secondary-color;
+			}
+		}
+		.menu{
+			&__title{
+				font-size: 1.7rem;
+				margin-bottom: 4rem;
+			}
+			&__ul{
+
+			}
+			&__li{
+				margin: 1.4rem 0;
+			}
+			&__link{
+				font:{
+					size: 1.5rem;
+					weight: 700;
+				}
+				text-transform: uppercase;
+				transition: color .2s ease-in;
+				&:hover, &.active{
+					color: $secondary-color;
+				}
+			}
+		}
+	}	
+	&__ul{
+		position: fixed;
+		width: 100%;
+		height: 5rem;
+		left: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		background: $text-color;
+		z-index: 750;
+		&-li{
+			color: $text-color-inverse;
+			font-size: 2.4rem;
+			transition: color .1s ease-in;
+			height: 4rem;
+			width: 4rem;
+			padding-top: .8rem;
+			outline: 1px solid transparent;
+			transition: outline-color .2s ease-in;
+			&:hover{
+				outline-color: $text-color-inverse;
+			}
+		}
+		&-icon{
+			cursor: pointer;
+		}
+	}
+	
+}
+
+
+
+
+.m-top-a-center{
+	text-align: center;
+	margin-top: 4rem;
+}

@@ -1,0 +1,40 @@
+@use "../vars/vars" as *;
+
+
+.footer{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #ddd;
+	&__group{
+		display: flex;
+		justify-content: space-between;
+		gap: 5rem;
+		padding: 4rem;
+		flex-wrap: wrap;
+		.content{
+			&__title{
+				font-size: 1.1rem;
+				margin-bottom: 1rem;
+			}
+			&__item{
+				font-size: .7rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	&__socials{
+		display: flex;
+		font-size: 1.4rem;
+		column-gap: 1rem;
+		padding-bottom: 3rem;
+		&-icon{
+			cursor: pointer;
+			&:hover{
+			color: #99CCFF; 
+		}
+		}
+	}
+}
