@@ -66,6 +66,7 @@
 			height: 300px;
 			object-position: top;
 			transition: filter .2s ease-in;
+			background-color: #ccc;
 			&:hover{
 				filter: brightness(130%);
 			}
