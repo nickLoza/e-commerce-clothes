@@ -1,0 +1,6 @@
+https://clothes-shop-react-web.netlify.app/home			
+https://clothes-shop-react-web.netlify.app/products/all	
+https://clothes-shop-react-web.netlify.app/products/spring	
+https://clothes-shop-react-web.netlify.app/products/summer	
+https://clothes-shop-react-web.netlify.app/products/autumn	
+https://clothes-shop-react-web.netlify.app/products/winter
