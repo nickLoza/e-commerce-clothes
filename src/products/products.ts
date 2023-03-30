@@ -1,7 +1,7 @@
-import img1 from "./images/1.png";
-import img2 from "./images/2.png";
-import img3 from "./images/3.png";
-import img4 from "./images/4.png";
+const img1 = "https://i.postimg.cc/gcDzWF7x/1.webp";
+const img2 = "https://i.postimg.cc/Fz9hLDYF/2.webp";
+const img3 = "https://i.postimg.cc/vT3bLfnr/3.webp";
+const img4 = "https://i.postimg.cc/vT3bLfnr/3.webp";
 
 
 export const productsArray = [img1,img2,img3,img4];

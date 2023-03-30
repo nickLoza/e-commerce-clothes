@@ -1,17 +1,14 @@
-import hero1 from "/assets/images/hero/hero-1.jpg";
-import hero2 from "/assets/images/hero/hero-2.jpg";
-import hero3 from "/assets/images/hero/hero-3.jpg";
 import { BiShoppingBag }from "react-icons/bi";
 import { productsArray, productsDB } from "../products/products";
 import { addToCart } from "../features/cart/cartSlice";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { useAppDispatch } from "../app/hooks";
 import Helmet from "../components/helmet";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper';
 
-const heroImages = [hero1,hero2,hero3];
+const heroImages = ["https://i.postimg.cc/pdF0fvjk/hero-1.webp","https://i.postimg.cc/DZQBNcBX/hero-2.webp","https://i.postimg.cc/85gZwYBG/hero-3.webp"];
 
 import 'swiper/css';
 import 'swiper/css/navigation';

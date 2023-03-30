@@ -14,7 +14,7 @@ const seasons = [
 	{title: "Winter", to: "products/winter"}
 ]
 
-const logoUrl = "/assets/images/logo.png"
+const logoUrl = "https://i.postimg.cc/nhNv4wq1/logo.webp"
 
 type ToggleSideTypes = "bag"|"search"|null;
 
