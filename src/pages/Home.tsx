@@ -46,7 +46,7 @@ function Home() {
 				<h3 className="home__featured-title">Featured</h3>
 				<Swiper spaceBetween={25} slidesPerView={"auto"}className="home__featured-swiper">
 				  {productsDB.map((prod)=>{
-				  	return <SwiperSlide key={prod.id} className="home__featured-slide">
+				  	return <SwiperSlide key={prod.id} className="home__featured-slide" style={{width: "220px"}}>
 				  				<div className="home__featured-card card">
 				  					<Link className="card__link" to={`/products/${prod.id}`}>
 				  						<img src={prod.url} alt={prod.title} className="card__img"/>
