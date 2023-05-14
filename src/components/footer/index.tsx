@@ -1,3 +1,4 @@
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs"
 
 
@@ -12,10 +13,17 @@ function Footer() {
 					<p className="content__item">Gmail: shopfake@gmail.com</p>
 				</div>
 				<div className="footer__content content" tabIndex={0}>
-					<h4 className="content__title">Cities</h4>
-					<p className="content__item">St. Bridget's Place Upper, Galway, H91 HP6A, Irlanda</p>
-					<p className="content__item">F8P2+3P Cleveland, Ohio, U.S.A</p>
-					<p className="content__item">43-1 Rue des Artisans, 14100 Lisieux, France</p>
+					<h4 className="content__title">Information</h4>
+					<a  className="content__info"
+						href="https://github.com/nickLoza/e-commerce-clothes"
+						target="_blank">
+						Repository <AiOutlineGithub/>
+					</a>
+					<a  className="content__info"
+						href="https://www.linkedin.com/in/nicklozadev/"
+						target="_blank">
+						Linkedin <AiOutlineLinkedin/>
+					</a>
 				</div>
 				<div className="footer__content content" tabIndex={0}>
 					<h4 className="content__title">Other information</h4>
